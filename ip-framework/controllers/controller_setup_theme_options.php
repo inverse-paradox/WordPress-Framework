@@ -8,6 +8,3 @@ class IP_Framework_Controller_Setup_Theme_Options extends IP_Framework_Controlle
 	}
 
 }
-
-include IP_Framework::plugin_path() . '/models/model_setup_theme_options.php';
-include IP_Framework::plugin_path() . '/views/view_setup_theme_options.php';

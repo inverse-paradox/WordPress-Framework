@@ -10,13 +10,13 @@ class IP_Framework_View_Abstract
 
 		$this->showMessage();
 		
-		include IP_Framework::plugin_path() . '/templates/global/header.php';
-		if (file_exists(IP_Framework::plugin_path() . '/templates/' . $folder . '/' . $template . '.php')) {
-			include IP_Framework::plugin_path() . '/templates/' . $folder . '/' . $template . '.php';
+		include IP_FRAMEWORK_PLUGIN_PATH . 'templates/global/header.php';
+		if (file_exists(IP_FRAMEWORK_PLUGIN_PATH . 'templates/' . $folder . '/' . $template . '.php')) {
+			include IP_FRAMEWORK_PLUGIN_PATH . 'templates/' . $folder . '/' . $template . '.php';
 		} else {
 			echo 'Template file ' . $folder . '/' . $template . '.php not found.';
 		}
-		include IP_Framework::plugin_path() . '/templates/global/footer.php';
+		include IP_FRAMEWORK_PLUGIN_PATH . 'templates/global/footer.php';
 	}
 	
 	private function showMessage() {

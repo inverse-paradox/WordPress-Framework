@@ -8,6 +8,3 @@ class IP_Framework_Controller_Custom_Post_Types extends IP_Framework_Controller_
 	}
 
 }
-
-include IP_Framework::plugin_path() . '/models/model_custom_post_types.php';
-include IP_Framework::plugin_path() . '/views/view_custom_post_types.php';

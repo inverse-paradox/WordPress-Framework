@@ -8,6 +8,3 @@ class IP_Framework_Controller_Nav_Menus extends IP_Framework_Controller_Abstract
 	}
 
 }
-
-include IP_Framework::plugin_path() . '/models/model_nav_menus.php';
-include IP_Framework::plugin_path() . '/views/view_nav_menus.php';
