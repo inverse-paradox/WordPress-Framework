@@ -1,5 +1,5 @@
 <?php
-class IP_Framework_Controller_Setup_Theme_Options extends IP_Framework_Controller_Abstract
+class IP_Framework_Controller_Widget_Areas extends IP_Framework_Controller_Abstract
 {
 
 	public function save() {

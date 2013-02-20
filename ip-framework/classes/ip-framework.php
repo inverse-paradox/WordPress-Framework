@@ -19,17 +19,18 @@ class IP_Framework
 		add_action('init', array($this,'register_posts'));
 		add_action('init', array($this,'register_taxonomies'));
 		add_action('init', array($this,'register_menus'));
+		add_action('after_theme_setup', array($this,'register_image_sizes'));
+		add_action('widgets_init', array($this,'register_widget_areas'));
 
 	}
 
 	public function add_to_menu() {
 		add_menu_page('IP Framework', 'IP Framework', 'manage_ipframework', 'ip_framework', array($this, 'route'), IP_FRAMEWORK_PLUGIN_URL . 'assets/images/menu-icon.png', '61.1');
-		//add_submenu_page('ip_framework', 'Manage Theme Options', 'Theme Options', 'manage_options', 'ip_framework_setup_theme_options', array($this, 'route'));
 		add_submenu_page('ip_framework', 'Manage Nav Menus', 'Nav Menus', 'manage_ipframework', 'ip_framework_nav_menus', array($this, 'route'));
+		add_submenu_page('ip_framework', 'Manage Image Sizes', 'Image Sizes', 'manage_ipframework', 'ip_framework_image_sizes', array($this, 'route'));
+		add_submenu_page('ip_framework', 'Manage Sidebars', 'Sidebars', 'manage_ipframework', 'ip_framework_widget_areas', array($this, 'route'));
 		add_submenu_page('ip_framework', 'Manage Custom Post Types', 'Custom Post Types', 'manage_ipframework', 'ip_framework_custom_post_types', array($this, 'route'));
 		add_submenu_page('ip_framework', 'Manage Custom Taxonomies', 'Custom Taxonomies', 'manage_ipframework', 'ip_framework_custom_taxonomies', array($this, 'route'));
-
-		//add_theme_page('Manage Theme Options', 'Theme Options', 'edit_themes', 'ip_framework_theme_options', array($this, 'route'));
 	}
 
 	public function register_styles() {
@@ -85,6 +86,24 @@ class IP_Framework
 		$menus = get_option('ip_framework_nav_menus');
 		if (is_array($menus)) {
 			register_nav_menus($menus);
+		}
+	}
+	
+	public function register_image_sizes() {
+		$sizes = get_option('ip_framework_image_sizes');
+		if (is_array($sizes)) {
+			foreach ($sizes as $size) {
+				add_image_size($size['name'], $size['width'], $size['height'], $size['crop']);
+			}
+		}
+	}
+
+	public function register_widget_areas() {
+		$sidebars = get_option('ip_framework_widget_areas');
+		if (is_array($sidebars)) {
+			foreach ($sidebars as $sidebar) {
+				register_sidebar($sidebar);
+			}
 		}
 	}
 

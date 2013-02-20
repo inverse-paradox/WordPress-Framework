@@ -1,5 +1,5 @@
 <?php
-class IP_Framework_Controller_Theme_Options extends IP_Framework_Controller_Abstract
+class IP_Framework_Controller_Image_Sizes extends IP_Framework_Controller_Abstract
 {
 
 	public function save() {
