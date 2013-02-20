@@ -1,6 +1,6 @@
 /* =================================================
 	'broken' table general */
-	
+
 .broken-table-header .widefat {
 	border-radius: 3px 3px 0 0;
 	border-width: 1px 1px 0 1px;
@@ -38,7 +38,7 @@ td.name:hover .row_options {
 
 /* =================================================
 	input table general */
-	
+
 .field-options {
 	display: none;
 }
@@ -125,6 +125,7 @@ td.name:hover .row_options {
 .ipf-options.widefat th.submit button,
 .ipf-options.widefat th.submit input {
 	float: left;
+	margin-right: 10px;
 }
 
 
@@ -166,7 +167,7 @@ td.name:hover .row_options {
 
 /* =================================================
 	options page specifics */
-	
+
 .ip-framework_page_ip_framework_setup_theme_options .ipf-options .order,
 .toplevel_page_ip_framework .ipf-options .order {
 	width: 10%;
@@ -186,7 +187,7 @@ td.name:hover .row_options {
 
 /* =================================================
 	custom post types page specifics */
-	
+
 .ip-framework_page_ip_framework_custom_post_types .ipf-options .label {
 	width: 20%;
 }
@@ -202,7 +203,7 @@ td.name:hover .row_options {
 
 /* =================================================
 	custom taxonomies page specifics */
-	
+
 .ip-framework_page_ip_framework_custom_taxonomies .ipf-options .label {
 	width: 45%;
 }
@@ -215,11 +216,34 @@ td.name:hover .row_options {
 
 /* =================================================
 	nav menus page specifics */
-	
+
 .ip-framework_page_ip_framework_nav_menus .ipf-options .label {
 	width: 50%;
 }
 .ip-framework_page_ip_framework_nav_menus .ipf-options .slug {
+	width: 50%;
+}
+
+/* =================================================
+	image sizes page specifics */
+
+.ip-framework_page_ip_framework_image_sizes .ipf-options .name,
+.ip-framework_page_ip_framework_image_sizes .ipf-options .width,
+.ip-framework_page_ip_framework_image_sizes .ipf-options .height,
+.ip-framework_page_ip_framework_image_sizes .ipf-options .crop {
+	width: 25%;
+}
+
+/* =================================================
+	sidebars page specifics */
+
+.ip-framework_page_ip_framework_widget_areas .ipf-options .name {
+	width: 30%;
+}
+.ip-framework_page_ip_framework_widget_areas .ipf-options .id {
+	width: 20%;
+}
+.ip-framework_page_ip_framework_widget_areas .ipf-options .description {
 	width: 50%;
 }
 
