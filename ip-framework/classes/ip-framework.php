@@ -19,7 +19,7 @@ class IP_Framework
 		add_action('init', array($this,'register_posts'));
 		add_action('init', array($this,'register_taxonomies'));
 		add_action('init', array($this,'register_menus'));
-		add_action('after_theme_setup', array($this,'register_image_sizes'));
+		add_action('init', array($this,'register_image_sizes'));
 		add_action('widgets_init', array($this,'register_widget_areas'));
 
 	}
