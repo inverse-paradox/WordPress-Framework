@@ -1,0 +1,260 @@
+/* =================================================
+	'broken' table general */
+
+.broken-table-header .widefat {
+	border-radius: 3px 3px 0 0;
+	border-width: 1px 1px 0 1px;
+}
+.broken-table-body .widefat {
+	border-radius: 0;
+	border-width: 0;
+}
+.broken-table-footer .widefat {
+	border-radius: 0 0 3px 3px;
+	border-width: 0 1px 1px 1px;
+}
+.broken-table-body {
+	background-color: #F9F9F9;
+    border-left: 1px solid #DFDFDF;
+	border-right: 1px solid #DFDFDF;
+}
+.broken-table-row {
+	border-top: 1px #fff solid;
+	border-bottom: 1px #dfdfdf solid;
+}
+.broken-table-row .widefat td {
+	border: none;
+}
+.broken-table-row.no-content {
+	padding: 6px 10px;
+}
+.row_options {
+	visibility: hidden;
+}
+td.label:hover .row_options,
+td.name:hover .row_options {
+	visibility: visible;
+}
+
+/* =================================================
+	input table general */
+
+.field-options {
+	display: none;
+}
+.field-options.expanded {
+	display: block;
+}
+.widefat.ipf-input {
+	margin: 2%;
+	width: 96%;
+	border-radius: 3px 3px 3px 3px;
+	border-width: 1px;
+}
+.widefat.ipf-input.ipf-user-theme-options {
+	margin: 15px 0;
+	width: 100%;
+}
+.ipf-input td.label {
+	padding: 10px;
+	width: 24%;
+	vertical-align: top;
+	background: #F9F9F9;
+	border-right: 1px #E1E1E1 solid;
+	border-top: 1px #F0F0F0 solid;
+}
+.ipf-input td.input {
+	padding: 10px;
+	vertical-align: top;
+	background: #fff;
+	border-top: 1px #F5F5F5 solid;
+}
+.ipf-input tr:first-child td {
+	border-top: none;
+}
+.ipf-input td.input input,
+.ipf-input td.input textarea {
+	padding: 5px;
+	width: 99%;
+}
+.ipf-input td.input select {
+	width: 100%;
+}
+.ipf-input td.input textarea {
+	height: 100px;
+}
+.ipf-input td.input input[type=radio],
+.ipf-input td.input input[type=checkbox] {
+	width: auto;
+}
+.ipf-input td.label p {
+	color: #555555;
+	margin: 9px 0 0;
+}
+.ipf-input td.label label {
+	display: block;
+	color: #000;
+	font-weight: bold;
+}
+#blank-field {
+	display: none;
+}
+.ipf-input.widefat th.submit,
+.ipf-options.widefat th.submit {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.ipf-input.widefat th.submit input,
+.ipf-options.widefat th.submit input,
+.ipf-input.widefat th.submit button.button-primary,
+.ipf-options.widefat th.submit button.button-primary {
+	height: 23px;
+	line-height: 12px;
+}
+.ipf-input.widefat th.submit input,
+.ipf-options.widefat th.submit input {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.ipf-input.widefat th.submit button.button-primary,
+.ipf-options.widefat th.submit button.button-primary {
+	padding: 0px 10px 0;
+	font: bold 12px/12px Arial, Helvetica, sans-serif;
+}
+.ipf-input.widefat th.submit button,
+.ipf-input.widefat th.submit input,
+.ipf-options.widefat th.submit button,
+.ipf-options.widefat th.submit input {
+	float: left;
+	margin-right: 10px;
+}
+
+
+/* =================================================
+	tab sections general */
+.field-options .tab .tab-link {
+	display: block;
+	margin: 2%;
+	padding: 7px 7px 8px;
+	font: 14px/1.3 Georgia, "Times New Roman", Times, serif;
+	color: #333;
+	text-decoration: none;
+	text-shadow: rgba(255, 255, 255, 0.8) 0 1px 0;
+	background: #f9f9f9;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y5ZjlmOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlY2VjZWMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #f9f9f9 0%, #ececec 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#ececec));
+	background: -webkit-linear-gradient(top,  #f9f9f9 0%,#ececec 100%);
+	background: -o-linear-gradient(top,  #f9f9f9 0%,#ececec 100%);
+	background: -ms-linear-gradient(top,  #f9f9f9 0%,#ececec 100%);
+	background: linear-gradient(to bottom,  #f9f9f9 0%,#ececec 100%);
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#ececec',GradientType=0 );*/
+	border: 1px #DFDFDF solid;
+	border-radius: 3px;
+}
+.field-options .tab table {
+	display: none;
+}
+.field-options .tab.expanded table {
+	display: block;
+}
+.field-options .tab .tab-link:after {
+	content: " [+]";
+}
+.field-options .tab.expanded .tab-link:after {
+	content: " [-]";
+}
+
+
+/* =================================================
+	options page specifics */
+
+.ip-framework_page_ip_framework_setup_theme_options .ipf-options .order,
+.toplevel_page_ip_framework .ipf-options .order {
+	width: 10%;
+}
+.ip-framework_page_ip_framework_setup_theme_options .ipf-options .label,
+.toplevel_page_ip_framework .ipf-options .label {
+	width: 40%;
+}
+.ip-framework_page_ip_framework_setup_theme_options .ipf-options .name,
+.toplevel_page_ip_framework .ipf-options .name {
+	width: 35%;
+}
+.ip-framework_page_ip_framework_setup_theme_options .ipf-options .type,
+.toplevel_page_ip_framework .ipf-options .type {
+	width: 15%;
+}
+
+/* =================================================
+	custom post types page specifics */
+
+.ip-framework_page_ip_framework_custom_post_types .ipf-options .label {
+	width: 20%;
+}
+.ip-framework_page_ip_framework_custom_post_types .ipf-options .name {
+	width: 20%;
+}
+.ip-framework_page_ip_framework_custom_post_types .ipf-options .description {
+	width: 45%;
+}
+.ip-framework_page_ip_framework_custom_post_types .ipf-options .type {
+	width: 15%;
+}
+
+/* =================================================
+	custom taxonomies page specifics */
+
+.ip-framework_page_ip_framework_custom_taxonomies .ipf-options .label {
+	width: 45%;
+}
+.ip-framework_page_ip_framework_custom_taxonomies .ipf-options .name {
+	width: 45%;
+}
+.ip-framework_page_ip_framework_custom_taxonomies .ipf-options .hierarchical {
+	width: 10%;
+}
+
+/* =================================================
+	nav menus page specifics */
+
+.ip-framework_page_ip_framework_nav_menus .ipf-options .label {
+	width: 50%;
+}
+.ip-framework_page_ip_framework_nav_menus .ipf-options .slug {
+	width: 50%;
+}
+
+/* =================================================
+	image sizes page specifics */
+
+.ip-framework_page_ip_framework_image_sizes .ipf-options .name,
+.ip-framework_page_ip_framework_image_sizes .ipf-options .width,
+.ip-framework_page_ip_framework_image_sizes .ipf-options .height,
+.ip-framework_page_ip_framework_image_sizes .ipf-options .crop {
+	width: 25%;
+}
+
+/* =================================================
+	sidebars page specifics */
+
+.ip-framework_page_ip_framework_widget_areas .ipf-options .name {
+	width: 30%;
+}
+.ip-framework_page_ip_framework_widget_areas .ipf-options .id {
+	width: 20%;
+}
+.ip-framework_page_ip_framework_widget_areas .ipf-options .description {
+	width: 50%;
+}
+
+/* =================================================
+	user options page specifics */
+.ipf-user-options-heading {
+	margin: 30px 0 0;
+}
+.ipf-user-options-heading h3 {
+	margin: 0 0 6px;
+}
+.ipf-user-options-heading p {
+	margin-top: 0;
+}
