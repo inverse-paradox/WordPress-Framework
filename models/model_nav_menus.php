@@ -4,7 +4,7 @@ class IP_Framework_Model_Nav_Menus extends IP_Framework_Model_Abstract
 
 	function save() {
 
-		$post = $_POST;
+		$post = stripslashes_deep($_POST);
 		$nav_menus = array();
 
 		if (isset($post['options'])) {

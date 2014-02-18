@@ -4,11 +4,7 @@ class IP_Framework_Model_Image_Sizes extends IP_Framework_Model_Abstract
 
 	function save() {
 
-		if (get_magic_quotes_gpc()) {
-			$post = stripslashes_deep($_POST);
-		} else {
-			$post = $_POST;
-		}
+		$post = stripslashes_deep($_POST);
 		$image_sizes = array();
 
 		if (isset($post['options'])) {

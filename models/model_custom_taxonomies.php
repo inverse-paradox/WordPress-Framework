@@ -4,7 +4,7 @@ class IP_Framework_Model_Custom_Taxonomies extends IP_Framework_Model_Abstract
 
 	function save() {
 
-		$post = $_POST;
+		$post = stripslashes_deep($_POST);
 		$taxonomies = array();
 
 		$array_fields = array(
